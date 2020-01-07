@@ -5,7 +5,8 @@
   "main": "PsBabyM1/index.js",
   "scripts": {
     "flow": "flow",
-    "test": "flow && parcel build test/index.js --target node && node dist/index.js"
+    "test": "flow && parcel build test/index.js --target node && node dist/index.js",
+    "build": "flow-remove-types . -d lib"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/plugin-transform-flow-strip-types": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.5.0",
-    "flow-bin": "^0.88.0"
+    "flow-bin": "^0.88.0",
+    "flow-remove-types": "^2.115.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.4",
